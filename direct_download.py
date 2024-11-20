@@ -4,8 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from t import download_image
-
+from downloader import download_image
 
 def init_browser() -> webdriver.Chrome:
     try:
